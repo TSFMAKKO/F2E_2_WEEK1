@@ -1,0 +1,320 @@
+/* html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        } */
+
+        /* 通用 */
+
+        @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+        body {
+            font-family: 'cwTexHei', sans-serif;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+
+        /* 下面兩個一組  一起使用 */
+        .control_container {
+            height: 100%;
+            min-height: 1000px;
+            /* float: left; */
+            /* padding: 60px 100px; */
+
+        }
+
+        .leftControl {
+            width: 44%;
+            min-height: 1000px;
+            float: left;
+            background-color: black;
+            color: white;
+            /* vertical-align: middle; */
+            /* padding-top: 100px; */
+        }
+
+        .rightControl {
+            float: right;
+            min-height: 1000px;
+            width: 56%;
+            /* text-align: center; */
+
+        }
+
+        .rightControl ul {
+            margin-top: 25%;
+        }
+
+        .rightIn {
+            margin-left: 10%;
+            margin-right: 15%;
+        }
+
+        ul li {
+            list-style: none;
+            cursor: pointer;
+
+        }
+
+        #item li {
+            display: inline;
+            /* margin-left: 5%; */
+            /* padding-right: 5%; */
+            /* text-align: left; */
+            margin-left: 14px;
+            ;
+
+        }
+
+        /* ul.wrap{
+            display: table;
+            margin: 0 auto;
+
+
+        } */
+
+        #add {
+            /* margin: 0% 13%; */
+            margin-top: 10%;
+            width: 95%;
+            height: 40px;
+            color: orange;
+            padding: 5px;
+            padding-left: 15px;
+
+            position: relative;
+            z-index: 1;
+        }
+
+        .StrAdd{
+            position: relative;
+            z-index: 2;
+            top: -48px;
+            left: 95%;
+            color: orange;
+            font-size: 36px;
+            background: white;
+            border: inherit;
+            padding: 0;
+        }
+
+        /* .todoCheck::after{
+            position: absolute;
+            z-index: 2;
+            content: '+';
+            font-size: 72px;
+            top: 9%;
+            right: 20%;
+            color: orange;
+        } */
+
+        
+
+        /* #to-do::before{ */
+            /* position: absolute; */
+            /* content: '123'; */
+            /* top: 0px;
+            right: 0px; */
+            /* color: orange;
+
+        } */
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: orange;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: orange;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: orange;
+        }
+
+        .rightControl P.black {
+            background: black;
+            color: white;
+            /* margin: inherit;
+            padding: inherit; */
+            text-align: left;
+            /* margin: 0; */
+            margin-left: 1%;
+            /* height: 30px; */
+            /* vertical-align: middle; */
+
+            padding-left: 3%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .rightIn P.item {
+            border-bottom: 1px solid gray;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .inside {
+            /* border: 1px solid #aabbcc; */
+            /* width: 80%; */
+            margin: 0;
+        }
+
+        .inside P {
+            background: black;
+            color: white;
+            width: 100%;
+            padding-left: 3%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .inside P.musicTodo,
+        .inside P.musicRest,
+        .inside P.timeTodo,
+        .inside P.timeRest {
+            background: white;
+            color: black;
+        }
+
+
+        .ANALYTICS {
+            display: none;
+            margin-left: -23%;
+        }
+
+        .setting {
+            display: none;
+            margin-left: -23%;
+        }
+
+
+        .leftIn {
+            padding-top: 30%;
+            padding-left: 20%;
+        }
+
+        .leftIn P {
+            color: green;
+            padding-left: 10%;
+            text-align: justify;
+            /* text-justify: inter-ideograph;
+            -ms-text-justify: inter-ideograph;
+            -moz-text-align-last: justify;
+            -webkit-text-align-last: justify; */
+        }
+
+        .leftIn img {
+            /* padding-left: 20%  */
+            /* width: 200px; */
+            height: 230px;
+        }
+
+        .leftIn span.min {
+            padding-left: 10%;
+        }
+
+        .leftIn span {
+            font-size: 90px;
+        }
+
+        .inside {
+            margin-left: 20%;
+            margin-top: 10%;
+        }
