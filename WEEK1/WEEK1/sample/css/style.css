@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:500,700&display=swap&subset=chinese-traditional');
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    width: 1280px;
+    height: 800px;
+}
+
+/* aside */
+.time{
+    background: #000000;
+    flex-grow: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /*垂直置中*/
+    justify-content: center; /*垂直置中*/
+    margin: 15% 0px ;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F44336;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.play{
+    background: url('../images/play.png');
+    width: 64px;
+    height: 64px;
+    border: 0;
+    padding: 0;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown{
+    color: #ffffff;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown > p {
+    margin: 0px;
+}
+
+
+hr{
+    width: 55px;
+    border: 2px white solid;
+    position: relative;
+    left: -70px;
+}
+
+.fristlist{
+    color: #ffffff;
+}
+
+/* /.aside */
+
+/* contect */
+.contect{
+    background: #f1f1f1;
+    flex-grow: 7;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items:center;  /*垂直置中*/
+    justify-content:center; /*垂直置中*/
+}
+
+/* nav */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.nav > li{
+    list-style: none;
+    margin: 20px;
+    
+}
+
+.active{
+    color: #F44336;
+    cursor: pointer;
+    border: 3px;
+    border-bottom-style: solid;
+}
+
+.nav li:hover{
+    color: #F44336;
+    cursor: pointer;
+    border: 3px;
+    border-bottom-style: solid;
+}
+
+/* form */
+form{
+    width: 420px;
+}
+
+input{
+    border-radius: 1px;
+    padding: 5px;
+    border:1px solid #DBDBDB;
+}
+
+input::-webkit-input-placeholder{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    color: #F44336;
+}
+
+.intext{
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.submit {
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    color: #ccc;
+  }
+
+.fristlist{
+    display: flex;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ultitle{
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 420px;
+    height: 35px;
+    font-size: 15px;
+    background: #000;
+    color: #000000;
+    border: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.ultitle > span{
+    color: #ffffff;
+}
+
+.todolist{
+    padding-left: 0px;
+}
+
+.todolist > li{
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    border-bottom: #ccc 1px solid;
+    padding: 8px;
+    background: #ffffff;
+    margin: 2%;
+
+}
+
+
+.donelist{
+    padding-left: 0px;
+}
+
+.donelist > li{
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    border-bottom: #ccc 1px solid;
+    padding: 8px;
+    background: #ffffff;
+    margin: 2%;
+
+}
+
+.show-triangle{
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 10px;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    right: 0px;
+    text-align: right;
+}
+
+/* /.form */
+
+/* /.nav */
+
+
+/* /.contect */

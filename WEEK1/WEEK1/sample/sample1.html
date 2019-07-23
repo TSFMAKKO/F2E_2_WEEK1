@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tomato Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css">
+    <script src="https://kit.fontawesome.com/a88de166a5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- time -->
+        <div class="time">
+            <div class="timer">
+                <img src="images/leave.svg" alt="" style="position: relative; left:-120px; top: 50px;">
+                <div class="circle">
+                    <button class="play">
+                    </button>
+                </div>
+                <div class="detail">
+                    <div class="countdown">
+                       <p>25:00</p>
+                    </div>
+                    <hr class="whiteline">
+                    <div class="fristlist">
+                        THE FIRST THING TO DO
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- time -->
+
+        <!-- contect -->
+        <div class="contect">
+            <div class="text">
+                <ul class="nav">
+                    <li class="active"><i class="fas fa-list"></i> TO DOLIST</li>
+                    <li><i class="far fa-chart-bar"></i> ANALYTICS</li>
+                    <li><i class="fas fa-cog"></i> SETTING</li>
+                </ul>
+                <form id="newItemForm">
+                    <input type="text" id="itemDescription" class="intext" placeholder="ADD NEW MISSION..." />
+                    <input type="submit" id="addButton" value="add" class="submit" /> 
+                </form>
+                <div class="list">
+                    <button class="ultitle">
+                        <!-- <div class="show-triangle"></div> -->
+                        <span> TO-DO</span></button>
+                        <ul class="todolist">
+                                <!-- <input type="radio" id="r1" name="rr" />
+                                <label for="r1"><span></span>THE FIRST THING TO DO</label> -->
+                            <li>THE FIRST THING TO DO</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    
+                    <button class="ultitle">
+                            <!-- <div class="show-triangle"></div> -->
+                            <span> DONE</span></button>
+                            <ul class="donelist">
+                                <li>4</li>
+                                
+                            </ul>
+                    
+                 </div>
+            </div>
+        </div>
+        <!-- contect -->
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

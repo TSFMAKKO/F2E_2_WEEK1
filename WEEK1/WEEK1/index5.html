@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/all3.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="control_container">
+
+
+        <div class="leftControl">
+            <div class="leftIn">
+                <!-- <ul>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                </ul> -->
+
+                <img src="./images/clock2.jpg" alt="" onclick="setTime(this)">
+                <br><br><br>
+
+                <span class="min">25</span><span>:</span><span class="sec">00</span>
+                <p>THE XXXX THING TO DO</p>
+
+            </div>
+
+        </div>
+
+        <div class="rightControl">
+            <div class="todolist">
+                <div class="rightIn">
+                    <!-- 右邊標題列開始 -->
+                    <ul id="item">
+                        <li onclick="ChangeTodoList(this)">TO DO LIST</li>
+                        <li onclick="ChangeANALYTICS(this)">ANALYTICS</li>
+                        <li onclick="ChangeSetting(this)">SETTING</li>
+
+                    </ul>
+                    <!-- 右邊標題列結束 -->
+
+
+                    <div class="todoCheck">
+                        <input type="text" name="" id="add" placeholder="ADD NEW MISSION...">
+                        <button class="StrAdd" id="StrAdd" onclick="addItem(this)">+</button>
+                        <!-- scroll  -->
+                        <div class="scroll">
+                            <p class="black" id="to-do">TO-DO</p>
+
+                            <!-- todo -->
+                            <div class="todo">
+
+                            </div>
+                            <!-- todo結束 -->
+
+                            <!-- todoEnd 開始 -->
+                            <P class="black">DONE</P>
+                            <div class="todoEnd"></div>
+                            <!-- 右邊todo內容 End -->
+
+
+                        </div>
+                    </div>
+                    <!-- 右邊todo內容 開始 -->
+
+
+
+                    <!-- 右邊 ANALYTICS 開始 -->
+                    <div class="ANALYTICS">
+                        <div class="inside">
+                            <p>專注時間</p>
+
+
+
+                            <p>圖表</p>
+                        </div>
+
+                    </div>
+                    <!-- 右邊 ANALYTICS 結束 -->
+
+                    <!-- 右邊 setting 開始 -->
+                    <div class="setting">
+                        <div class="inside">
+                            <p>鈴聲</p>
+
+                            <p class="musicTodo">
+                                <span>工作結束:</span>
+                                <select name="" id="" style="width: 30%">
+                                    <option value="./mp3/大港你贏了.mp3">大港你贏了</option>
+                                    <option value="./mp3/高雄發大財.mp3">檳榔柯與新黨</option>
+                                    <option value="./mp3/高雄發大財.mp3">政黨票投台灣基進</option>
+                                </select>
+                                <audio src="./mp3/大港你贏了.mp3"></audio>
+                            </p>
+
+                            <p class="musicRest">
+                                <span>休息結束:</span>
+                                <select name="" id="" style="width: 30%">
+                                    <option value="./mp3/高雄發大財.mp3">罷韓三十</option>
+                                    <option value="./mp3/大港你贏了.mp3">白眼女神</option>
+                                    <option value="./mp3/高雄發大財.mp3">3Q戰神</option>
+                                </select>
+                            </p>
+
+
+                            <p>時間</p>
+
+                            <p class="timeTodo">
+                                <span>工作時間:</span>
+                                <input type="text" name="" id="" value="25">分鐘
+                            </p>
+
+                            <p class="timeRest">
+                                <span>休息時間:</span>
+                                <input type="text" name="" id="" value="5">分鐘
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 右邊 setting 結束 -->
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/all5.js"></script>
+    <script src="./js/todolist.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        /* html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        } */
+
+        /* 通用 */
+
+        @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+        body {
+            font-family: 'cwTexHei', sans-serif;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-height: 100%;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+
+        /* 下面兩個一組  一起使用 */
+        .control_container {
+            height: 100%;
+            min-height: 1000px;
+            /* float: left; */
+            /* padding: 60px 100px; */
+
+        }
+
+        .leftControl {
+            width: 44%;
+            min-height: 1000px;
+            float: left;
+            background-color: black;
+            color: white;
+            /* vertical-align: middle; */
+            /* padding-top: 100px; */
+        }
+
+        .rightControl {
+            float: right;
+            min-height: 1000px;
+            width: 56%;
+            /* text-align: center; */
+
+        }
+
+        .rightControl ul {
+            margin-top: 25%;
+        }
+
+        .rightIn {
+            margin-left: 10%;
+            margin-right: 15%;
+        }
+
+        ul li {
+            list-style: none;
+            cursor: pointer;
+
+        }
+
+        #item li {
+            display: inline;
+            /* margin-left: 5%; */
+            /* padding-right: 5%; */
+            /* text-align: left; */
+            margin-left: 14px;
+            ;
+
+        }
+
+        /* ul.wrap{
+            display: table;
+            margin: 0 auto;
+
+
+        } */
+
+        #add {
+            /* margin: 0% 13%; */
+            margin-top: 10%;
+            width: 95%;
+            height: 40px;
+            color: orange;
+            padding: 5px;
+            padding-left: 15px;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: orange;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: orange;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: orange;
+        }
+
+        .rightControl P.black {
+            background: black;
+            color: white;
+            /* margin: inherit;
+            padding: inherit; */
+            text-align: left;
+            /* margin: 0; */
+            padding-left: 3%;
+            margin-left: 1%;
+            /* height: 30px; */
+            /* vertical-align: middle; */
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .rightIn P.item {
+            border-bottom: 1px solid gray;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+
+        .ANALYTICS {
+            display: none;
+        }
+
+        .setting {
+            display: none;
+        }
+
+
+        .leftIn {
+            padding-top: 30%;
+            padding-left: 20%;
+        }
+
+        .leftIn P {
+            color: green;
+            padding-left: 10%;
+            text-align: justify;
+            /* text-justify: inter-ideograph;
+            -ms-text-justify: inter-ideograph;
+            -moz-text-align-last: justify;
+            -webkit-text-align-last: justify; */
+        }
+
+        .leftIn img {
+            /* padding-left: 20%  */
+            /* width: 200px; */
+            height: 230px;
+        }
+
+        .leftIn span.min {
+            padding-left: 10%;
+        }
+
+        .leftIn span {
+            font-size: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="control_container">
+
+
+        <div class="leftControl">
+            <div class="leftIn">
+                <!-- <ul>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                </ul> -->
+
+                <img src="./images/clock2.jpg" alt="" onclick="setTime(this)">
+                <br><br><br>
+
+                <span class="min">25</span><span>:</span><span class="sec">00</span>
+                <p>THE XXXX THING TO DO</p>
+
+            </div>
+
+        </div>
+
+        <div class="rightControl">
+            <div class="todolist">
+                <div class="rightIn">
+                    <ul id="item">
+                        <li>TO DO LIST</li>
+                        <li>ANALYTICS</li>
+                        <li>SETTING</li>
+
+                    </ul>
+
+                    <input type="text" name="" id="add" placeholder="ADD NEW MISSION...">
+
+                    <p class="black">TO-DO</p>
+
+                    <p class="item" onclick="fun1(this)" id="item0">
+                        <input type="radio" name="item1" id="">
+                        <span>THE FIRST THING TO DO</span>
+                    </p>
+
+                    <p class="item" onclick="fun1(this)" id="item1">
+                        <input type="radio" name="item1" id="">
+                        <span>THE SECOND THING TO DO</span>
+                    </p>
+
+                    <p class="item" onclick="fun1(this)" id="item2">
+                        <input type="radio" name="item1" id="">
+                        <span>THE THIRD THING TO DO</span>
+                    </p>
+
+
+                    <p class="item" onclick="fun1(this)" id="item3">
+                        <input type="radio" name="item1" id="">
+                        <span>THE FOUR THING TO DO</span>
+                    </p>
+                    <P class="black">DONE</P>
+                </div>
+            </div>
+
+            <div class="ANALYTICS">123</div>
+
+            <div class="setting">123</div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/all.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
